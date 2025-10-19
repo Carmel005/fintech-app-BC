@@ -6,7 +6,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:897729103769:certificate/2440a3ff-3027-456f-8244-c02d07708d99
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:897729103769:certificate/d244f4fd-fb45-4508-a74e-a91281d13ad3
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
     alb.ingress.kubernetes.io/healthcheck-port: "8080"
     alb.ingress.kubernetes.io/healthcheck-path: "/actuator/health"
@@ -14,7 +14,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: app.fusisoft.com
+  - host: mendoservices.com
     http:
       paths:
       - path: /
